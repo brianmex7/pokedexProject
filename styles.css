@@ -1,0 +1,59 @@
+body {
+  background-color: orangered;
+  margin: 0;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #222;
+  text-align: center;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.card-subtitle {
+  margin-top: 5px;
+}
+.card-img {
+  height: 150px;
+}
+
+#pokedex {
+  margin: 0;
+  padding-inline-start: 0%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
